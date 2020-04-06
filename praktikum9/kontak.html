@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title> Form Data </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form method="POST" action="simpan_kontak.php"> 
+	
+	<div class="kotak_login">
+		<h2 class="tulisan_login"> Isikan Data </h2>
+		<br>
+	<table width="380" align="center" cellpadding="2" cellspacing="2">
+	
+	<tr>
+		<td width="150"> <label> Nama: </label> </td>
+		<td> <input type="text" name="nama"> </td>
+	</tr>
+	<tr>
+		<td width="150"> <label> Jenis Kelamin: </label> </td>
+		<td> <input type="radio" name="jkel" value="Laki-laki"> Laki-laki 
+			<input type="radio" name="jkel" value="Perempuan"> Perempuan </td>
+	</tr>
+	<tr>
+		<td width="150"> <label> Email: </label> </td>
+		<td> <input type="text" name="email"> </td>
+	</tr>
+	<tr>
+		<td width="150"> <label> Alamat: </label> </td>
+		<td> <input type="text" name="alamat"> </td>
+	</tr>
+	<tr>
+		<td width="150"> <label> Kota: </label> </td>
+		<td> 
+			<select name="kota">
+				<option value="Surabaya"> Surabaya </option>
+				<option value="Jakarta"> Jakarta </option> 
+				<option value="Bandung"> Bandung </option> 
+				<option value="Bogor"> Bogor </option>
+				<option value="Bali"> Bali </option> 
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td width="150"> <label> Pesan: </label> </td>
+		<td> <textarea name="pesan" cols="25" rows="5"> </textarea> </td>
+	</tr>
+	</table> <br>
+		<input type="submit" name="submit" value="submit" class="tombol_login"> <br> <br>
+		<center> <a href="admin/index.php" class="link"> cek data </a> </center>
+	
+</form>
+</div>
+</body>
+</html>
